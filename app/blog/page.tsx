@@ -6,6 +6,7 @@ import Link from 'next/link'
 const posts = [
   {
     id: 1,
+    slug: 'summit-one-vanderbilt',
     title: "Summit One Vanderbilt: New York'un Zirvesinde",
     description: "Manhattan'ın en yüksek noktalarından birinden şehri izlemek bambaşka bir his. Bulutların arasında kaybolurken şehrin nabzını hissediyorsunuz.",
     date: "December 2024",
@@ -15,6 +16,7 @@ const posts = [
   },
   {
     id: 2,
+    slug: 'vancouver-whistler',
     title: "Vancouver'dan Whistler'a: Kar ve Özgürlük",
     description: "Sea to Sky Highway boyunca sürerken her virajda yeni bir manzara. Whistler sadece bir kayak merkezi değil, bir yaşam tarzı.",
     date: "January 2025",
@@ -24,6 +26,7 @@ const posts = [
   },
   {
     id: 3,
+    slug: 'empire-state',
     title: "Empire State'in Tepesinde Gün Batımı",
     description: "Klasik ama etkisini hiç kaybetmeyen bir deneyim. New York siluetini turuncu gökyüzünde izlemek için bir kez daha çıkmaya değer.",
     date: "December 2024",
@@ -36,7 +39,6 @@ const posts = [
 export default function Blog() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
-      {/* Navbar */}
       <motion.nav
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -51,7 +53,6 @@ export default function Blog() {
         </div>
       </motion.nav>
 
-      {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -62,7 +63,6 @@ export default function Blog() {
         <h1 className="text-5xl font-bold tracking-tight">Blog</h1>
       </motion.div>
 
-      {/* Posts */}
       <div className="max-w-4xl mx-auto px-8 pb-20">
         {posts.map((post, index) => (
           <motion.div
@@ -70,26 +70,28 @@ export default function Blog() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.15 }}
-            className="border-t border-white/10 py-10 group cursor-pointer"
+            className="border-t border-white/10 py-10"
           >
-            <div className="flex items-center gap-4 text-xs text-gray-500 tracking-wider uppercase mb-4">
-              <span>{post.date}</span>
-              <span>·</span>
-              <span>{post.location}</span>
-              <span>·</span>
-              <span>{post.readTime}</span>
-            </div>
-            <h2 className="text-2xl font-semibold mb-3 group-hover:text-gray-300 transition-colors">
-              {post.title}
-            </h2>
-            <p className="text-gray-400 leading-relaxed max-w-2xl">
-              {post.description}
-            </p>
-            <div className="mt-6">
-              <span className="text-xs tracking-widest uppercase border border-white/20 px-3 py-1 text-gray-400">
-                {post.tag}
-              </span>
-            </div>
+            <Link href={`/blog/${post.slug}`} className="group block">
+              <div className="flex items-center gap-4 text-xs text-gray-500 tracking-wider uppercase mb-4">
+                <span>{post.date}</span>
+                <span>·</span>
+                <span>{post.location}</span>
+                <span>·</span>
+                <span>{post.readTime}</span>
+              </div>
+              <h2 className="text-2xl font-semibold mb-3 group-hover:text-gray-300 transition-colors">
+                {post.title}
+              </h2>
+              <p className="text-gray-400 leading-relaxed max-w-2xl">
+                {post.description}
+              </p>
+              <div className="mt-6">
+                <span className="text-xs tracking-widest uppercase border border-white/20 px-3 py-1 text-gray-400">
+                  {post.tag}
+                </span>
+              </div>
+            </Link>
           </motion.div>
         ))}
       </div>
