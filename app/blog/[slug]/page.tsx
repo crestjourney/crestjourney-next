@@ -31,17 +31,24 @@ Kayak yapmayı bilmeseniz bile Whistler'a gitmeye değer. Köyde yürüyüş, re
 Pratik bilgi: Vancouver'dan yaklaşık 2 saat sürüş. Kış aylarında yola çıkmadan önce hava durumunu mutlaka kontrol edin.`
   },
   'empire-state': {
-    title: "Empire State'in Tepesinde Gün Batımı",
+    title: "Empire State & Summit One Vanderbilt: Manhattan'ı İki Kez Fethetmek",
     date: "December 2024",
     location: "New York, USA",
     cover: "/images/empire-state-cover.jpg",
-    content: `Klasik ama etkisini hiç kaybetmeyen bir deneyim. Empire State Building'e kaç kez çıkarsanız çıkın, o manzara sizi her seferinde aynı şekilde etkiliyor.
+    content: `Aynı gün iki farklı zirve. Sabah Empire State, akşam Summit One Vanderbilt. Christmas zamanında New York'un tepesinde olmak başlı başına bir his.
 
-102. kattan New York'u izlemek, şehrin ne kadar büyük ve karmaşık olduğunu bir kez daha hatırlatıyor. Her ışık bir hikaye, her sokak bir macera.
+Empire State'e sabah erkenden çıktık. Şehir henüz uyanıyordu. Manhattan'ın o ikonik silueti, onlarca film sahnesinde gördüğüm o manzara, tam karşımdaydı. Gerçek olduğuna inanamadım ilk başta. Her yönüme baktım, tane tane hafızama kazımaya çalıştım. Ufukları izledim. O his kelimeyle anlatılmıyor.
 
-Gün batımında gökyüzünün aldığı renkler ise kelimelerle anlatılamaz. Turuncu, pembe ve mor tonların binaların camlarına yansıması inanılmaz bir görsel şölen sunuyor.
+Akşam üzeri Summit One Vanderbilt'e geçtik. Gün batımına denk getirdik. Cam yüzeylerde yansıyan turuncu ve kırmızı tonlar, Manhattan'ın ışıkları yavaş yavaş yanmaya başlarken o an — işte o an her şeydi.
 
-Pratik bilgi: 86. kat açık teras, 102. kat kapalı. Rüzgarlı havalarda 86. kat çok soğuk olabilir, buna göre giyinin.`
+Daha önce hiç bu kadar yükseğe çıkmamıştım. Bu deneyimden sonra anladım ki bazı şehirler, yukarıdan bakılmadan tam anlaşılamıyor.
+
+🕐 Empire State'e sabah gidin — öğleden sonra kuyruklar inanılmaz uzuyor.
+🌅 Summit için gün batımı saatini hesaplayın ve biletinizi önceden alın.
+🎄 Christmas dönemindeyseniz her iki yer de dolup taşıyor, planlamayı erkenden yapın.
+🌬️ Açık teraslara çıkacaksanız hava durumunu mutlaka kontrol edin — NYC kışı, özellikle rüzgarlı günlerde tahmin ettiğinizden çok daha sert olabiliyor.
+
+— Bu yazı ilerleyen dönemde fotoğraf ve video ile güncellenecek.`
   }
 }
 
