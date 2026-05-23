@@ -2,9 +2,10 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { use } from 'react'
 
-const posts: Record<string, { title: string; date: string; location: string; content: string }> = {
+const posts: Record<string, { title: string; date: string; location: string; content: string; cover?: string }> = {
   'summit-one-vanderbilt': {
     title: "Summit One Vanderbilt: New York'un Zirvesinde",
     date: "December 2024",
@@ -33,6 +34,7 @@ Pratik bilgi: Vancouver'dan yaklaşık 2 saat sürüş. Kış aylarında yola ç
     title: "Empire State'in Tepesinde Gün Batımı",
     date: "December 2024",
     location: "New York, USA",
+    cover: "/images/empire-state-cover.jpg",
     content: `Klasik ama etkisini hiç kaybetmeyen bir deneyim. Empire State Building'e kaç kez çıkarsanız çıkın, o manzara sizi her seferinde aynı şekilde etkiliyor.
 
 102. kattan New York'u izlemek, şehrin ne kadar büyük ve karmaşık olduğunu bir kez daha hatırlatıyor. Her ışık bir hikaye, her sokak bir macera.
@@ -89,6 +91,19 @@ export default function BlogPost({ params }: { params: Promise<{ slug: string }>
           <span>{post.location}</span>
         </div>
         <h1 className="text-4xl font-bold tracking-tight mb-10">{post.title}</h1>
+
+        {post.cover && (
+          <div className="relative w-full h-[50vh] mb-10 overflow-hidden">
+            <Image
+              src={post.cover}
+              alt={post.title}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
+
         <div className="text-gray-300 leading-relaxed space-y-6">
           {post.content.split('\n\n').map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
